@@ -1,0 +1,383 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header-image{
+    background-image: url(../assets/images/TopBackground2.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.section-container {
+    width: 98%;
+    margin: 20px auto;
+    padding: 30px;
+}
+
+.section-content-items {
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-around;
+
+}
+
+.section-content-first-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(50% - 20px);
+}
+
+.section-content-item-1-first-content {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 2.8rem;
+    /* border-bottom: 2px solid rgb(192, 190, 190); */
+}
+
+.content-heading {
+    font-size: 42px;
+    font-weight: bolder;
+    color: red;
+    margin-top: 20px;
+}
+
+.content-paratext {
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.section-content-first-container-img {
+    background-image: url(../assets/images/dummyImages.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 200px;
+    margin-top: 20px;
+}
+
+.section-content-second-container {
+    width: calc(40% - 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.second-container-upper-container {
+    display: flex;
+    /* justify-content: space-between; */
+    margin-top: 30%;
+    position: relative;
+}
+
+.second-container-first-img {
+    background-color: #000;
+    width: 120px;
+    height: 120px;
+    border: 20px solid #fff;
+    border-radius: 100%;
+    position: absolute;
+}
+
+.second-container-second-img {
+    background-color: #000;
+    width:80%;
+    height: 100px;
+    margin-top: 5px;
+    margin-left: 5rem;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: white;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.upper-text {
+    font-size: 32px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.lower-text {
+    margin-left: 50px;
+}
+
+.second-container-lower-container {
+    margin-top: 80px;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.second-container-lower-container-first-img{
+    background-image: url(../assets/images/stats.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+}
+
+.second-container-lower-container-second-img {
+    width: 60%;
+    height: 100px;
+    background-color: red;
+    border-radius: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.second-container-lower-container-second-img a {
+    color: #fff;
+}
+
+/* Mission section ends here */
+
+/* Programs section starts here */
+
+.programs-section {
+    box-shadow: 0px 0px 3px 5px rgb(246, 246, 246);
+    width: 98%;
+    margin: 20px auto;
+    padding: 30px;
+}
+
+.programs-section-container-heading {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+.programs-section-container-first-row-items {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+
+.programs-section-container-first-row-items-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    width: 300px;
+    min-height: 230px;
+    padding: 10px;
+}
+
+.programs-section-container-paragraph-text {
+    display: flex;
+    height: 150px;
+    /* margin: 0px; */
+}
+
+.programs-section-container-first-row-items-1:nth-child(-n+4){
+    border-right: 1px solid rgb(233, 233, 233);
+    border-right-style:outset;
+}
+
+.item-top-image {
+    min-width: 100px;
+    min-height: 100px;
+    background-color: #000;
+    border-radius: 5px;
+}
+
+.text-heading {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.heading-black-text {
+    color: #000;
+}
+
+.achievement-section-container {
+    box-shadow: 0px 0px 3px 5px rgb(246, 246, 246);
+    width: 98%;
+    margin: 20px auto;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.achievement-section-container-image{
+    width: 55%;
+    background-image: url(../assets/images/ProgramsImage.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.achievement-section-container-text {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.achievement-section-container-text-heading {
+    font-size: 5rem;
+    text-align: right;
+    font-weight: bold;
+    line-height: 6rem;
+    margin-bottom: 2rem;
+}
+
+.achievement-section-container-text-paragraph {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.red-text {
+    color: red;
+    font-weight: bold;
+}
+
+.testimonial-section-container {
+    box-shadow: 0px 0px 3px 5px rgb(246, 246, 246);
+    width: 98%;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonials {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+}
+
+.testimonial-image-container {
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.testimonial-content {
+    width: 90%;
+    
+}
+
+.testimonial-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: orangered;
+}
+
+/* .testimonial-1,
+.testimonial-2,
+.testimonial-3 {
+    width: 80%;
+} */
+
+.testimonial-1 {
+    background-color: #f8d3d3;
+}
+
+.testimonial-2 {
+    background-color: rgb(228, 228, 228);
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.testimonial-3 {
+    background-color: #f8d3d3;
+}
+
+.testimonial-image-1 {
+    background-image: url(../assets/media/6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid red;
+}
+
+.testimonial-image-2 {
+    position: relative;
+    background-image: url(../assets/media/7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid red;
+}
+
+.testimonial-image-3 {
+    background-image: url(../assets/media/8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid red;
+}
+
+.testimonial-middle-image {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.testimonial-section-container-heading {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.testimonial-heading {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.testimonial-paragraph {
+    display: flex;
+    flex-direction: column;
+}
+
+.quote {
+    margin: 0 auto;
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#quote {
+    color: red;
+    width: 5rem;
+    height: 9rem;
+    font-size: 15rem;
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.lower-para-text {
+    margin: 20px auto;
+    font-size: 1.2rem;
+}
+
+.testimonial-name {
+    font-weight: bold;
+}
