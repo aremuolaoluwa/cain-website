@@ -15,8 +15,9 @@ body {
     width: 100%;
     height: 100vh;
 }
-
+/* Sections */
 .section-container {
+    /* box-shadow: 0px 0px 3px 5px rgb(246, 246, 246); */
     width: 98%;
     margin: 20px auto;
     padding: 30px;
@@ -86,7 +87,7 @@ body {
     background-color: #000;
     width: 120px;
     height: 120px;
-    border: 20px solid #fff;
+    border: 20px solid #f30505;
     border-radius: 100%;
     position: absolute;
 }
@@ -156,13 +157,6 @@ body {
 
 /* Programs section starts here */
 
-.programs-section {
-    box-shadow: 0px 0px 3px 5px rgb(246, 246, 246);
-    width: 98%;
-    margin: 20px auto;
-    padding: 30px;
-}
-
 .programs-section-container-heading {
     font-size: 32px;
     font-weight: bold;
@@ -217,10 +211,6 @@ body {
 }
 
 .achievement-section-container {
-    box-shadow: 0px 0px 3px 5px rgb(246, 246, 246);
-    width: 98%;
-    margin: 20px auto;
-    padding: 30px;
     display: flex;
     justify-content: space-around;
 }
@@ -258,12 +248,10 @@ body {
     color: red;
     font-weight: bold;
 }
+/* Achievement section ends here */
 
+/* Testimonial section starts here */
 .testimonial-section-container {
-    box-shadow: 0px 0px 3px 5px rgb(246, 246, 246);
-    width: 98%;
-    margin: 20px auto;
-    padding: 20px;
     display: flex;
     flex-direction: column;
 }
@@ -381,3 +369,183 @@ body {
 .testimonial-name {
     font-weight: bold;
 }
+/* Testimonial section ends here */
+
+/* Impact section starts here */
+.impact-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.impact-text-content {
+    width: calc(60% - 10px);
+}
+.impact-map {
+    width: calc(35% - 10px);
+}
+
+.impact-item-first-row {
+    display: flex;
+    gap: 30px;
+}
+.impact-item-second-row {
+    display: flex;
+    margin-top: 4rem;
+    gap: 30px;
+}
+
+.impact-item {
+    width: 15rem;
+}
+
+.impact-number {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.impact-personnel {
+    font-size: 1.5rem;
+}
+
+.impact-para-text {
+    font-size: 1rem;
+    width: 200px;
+}
+
+.impact-map {
+    background-image: url(../assets/images/map.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Impact section ends here */
+/* Gift section starts here */
+.gift-container {
+    background-image: url(../assets/images/gift.png);
+    background-size: cover;
+    height: 80vh;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.gift-para-text {
+    width: 600px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 10rem;
+    left: 10rem;
+}
+
+.give-today-container {
+    width: 200px;
+    background-color: red;
+    color: #fff;
+    text-transform: uppercase;
+    position: absolute;
+    top: 25rem;
+    left: 10rem;
+    padding: 20px;
+    font-weight: bold;
+}
+
+/* News and Insights Section Starts here */
+.news-and-insights {
+    height: auto;
+}
+
+.section-item {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    border: 2px solid brown;
+}
+
+.news-section-row {
+    display: flex;
+    justify-content: space-between;
+    height: 70vh;
+}
+
+.second-row {
+    margin-top: 2rem;
+}
+
+.section-first-item,
+.section-second-item,
+.section-third-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 400px;
+}
+
+.media-container {
+    height: 315px;
+}
+
+.img-media-container-1 {
+    width: 400px;
+    background-image: url(../assets/images/10.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img-media-container-2 {
+    width: 400px;
+    background-image: url(../assets/images/9.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img-media-container-3 {
+    width: 400px;
+    background-image: url(../assets/images/9.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.news-link, .news-link a {
+    color: red;
+    margin-top: 10px;
+}
+
+.section-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+/* News and Insights section ends here */
+
+/* Partners and Sponsors Section starts here */
+  .partners-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Style for the first and second row */
+  .images-first-row, .images-second-row {
+    display: flex;
+    justify-content: space-evenly; /* Equal spacing between the images */
+    gap: 20px; /* Optional: Adds horizontal space between each image */
+  }
+  
+  /* Image container styling */
+  .partners-image-container {
+    max-width: 150px;  /* Set max width for the images */
+    width: 100%;
+    height: auto;
+    object-fit: contain;  /* Ensure images maintain aspect ratio */
+    transition: transform 0.3s ease-in-out; /* Optional: adds a smooth hover effect */
+  }
+  
+  .partners-image-container:hover {
+    transform: scale(1.5); /* Optional: scale image slightly on hover */
+  }  
