@@ -24,10 +24,13 @@ body {
     padding: 5px;
 }
 
+.max-width {
+    width: 100%;
+}
+
 /* All sections ends here */
 
 .mission-section {
-    border: 2px solid red;
     display: flex;
 }
 
@@ -38,10 +41,6 @@ body {
 
 .section-content-first-container {
     width: 50%;
-}
-
-.upper-content {
-    /* margin-left: 20px; */
 }
 
 .section-content-item-1-first-content {
@@ -61,12 +60,10 @@ body {
 }
 
 .section-content-first-container-img {
-    flex: 1;
     height: 150px;
     background-image: url(../assets/images/dummyImages.png);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
     margin-top: 10px;
 }
 
@@ -80,16 +77,34 @@ body {
 }
 
 .section-content-second-container {
-    border: 2px solid orangered;
-    width: 45%;
+    width: fit-content;
+    height: fit-content;
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 4rem;
+}
+
+.second-content-container {
+    width: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    justify-items: flex-start;
+    align-items: center;
+}
+
+.second-content-container img {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: flex-start;
+    justify-self: flex-start;
 }
 
 .second-container-upper-container {
-    border: 2px solid palevioletred;
     width: 550px;
     min-height: 200px;
+    margin-top: 5rem;
     background-image: url(../assets/images/globes.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -97,6 +112,21 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #fff;
+}
+
+.text-container {
+    width: 360px;
+    background-color: #ff0000;
+    padding: 25px;
+    border-radius: 3rem;
+    color: #fff;
+    margin-left: 18px;
+    line-height: 25px;
+    font-weight: bold;
+}
+
+.text-container a {
     color: #fff;
 }
 
@@ -123,6 +153,15 @@ body {
 
 /* Programs section starts here */
 
+.programs-section {
+    box-shadow: 0px -4px 2px 0px rgb(252, 252, 252);
+}
+
+.programs-section-container {
+    width: 97%;
+    margin: 3rem auto;
+}
+
 .programs-section-container-heading {
     font-size: 32px;
     font-weight: bold;
@@ -144,20 +183,30 @@ body {
     justify-content: space-around;
     text-align: center;
     width: 300px;
-    min-height: 230px;
+    max-height: 248px;
     padding: 10px;
 }
 
 .programs-section-container-paragraph-text {
     display: flex;
     height: 150px;
-    /* margin: 0px; */
 }
 
-.programs-section-container-first-row-items-1:nth-child(-n+4){
-    border-right: 1px solid rgb(233, 233, 233);
-    border-right-style:outset;
-}
+.programs-section-container-first-row-items-1:nth-child(-n+4) {
+    position: relative;
+  }
+  
+  .programs-section-container-first-row-items-1:nth-child(-n+4)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 50%; 
+    background-color: rgb(209, 209, 209);
+  }
+  
 
 .item-top-image {
     min-width: 100px;
@@ -217,6 +266,10 @@ body {
 /* Achievement section ends here */
 
 /* Testimonial section starts here */
+.testimonial {
+    margin-top: 5rem;
+}
+
 .testimonial-section-container {
     display: flex;
     flex-direction: column;
@@ -247,12 +300,6 @@ body {
     background-color: orangered;
 }
 
-/* .testimonial-1,
-.testimonial-2,
-.testimonial-3 {
-    width: 80%;
-} */
-
 .testimonial-1 {
     background-color: #f8d3d3;
 }
@@ -268,7 +315,7 @@ body {
 }
 
 .testimonial-image-1 {
-    background-image: url(../assets/media/6.jpg);
+    background-image: url(../assets/images/6.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     border: 2px solid red;
@@ -276,14 +323,14 @@ body {
 
 .testimonial-image-2 {
     position: relative;
-    background-image: url(../assets/media/7.jpg);
+    background-image: url(../assets/images/7.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     border: 2px solid red;
 }
 
 .testimonial-image-3 {
-    background-image: url(../assets/media/8.jpg);
+    background-image: url(../assets/images/8.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     border: 2px solid red;
