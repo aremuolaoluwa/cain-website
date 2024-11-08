@@ -211,7 +211,6 @@ body {
 .item-top-image {
     min-width: 100px;
     min-height: 100px;
-    background-color: #000;
     border-radius: 5px;
 }
 
@@ -224,6 +223,13 @@ body {
 .heading-black-text {
     color: #000;
 }
+
+/* Programs Images */
+.programs-section-container-first-row-items-first-image {
+    background-image: url(../assets/images/);
+}
+
+/* Programs section ends here */
 
 .achievement-section-container {
     display: flex;
@@ -379,6 +385,10 @@ body {
 /* Testimonial section ends here */
 
 /* Impact section starts here */
+.impact {
+    margin-top: 4rem;
+}
+
 .impact-container {
     display: flex;
     justify-content: space-around;
