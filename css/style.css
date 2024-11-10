@@ -75,11 +75,9 @@ body {
     top: 10;
     left: 2%;
 }
-
-/* .logo {
-    border: 2px solid orangered;
-    width: 20%;
-} */
+.nav-bar a:hover {
+    color: #ff0000;
+}
 
 .logo-container {
     width: 100px;
@@ -91,27 +89,58 @@ body {
 
 .nav-bar-items {
     width: 75%;
-    height: fit-content;
+    padding: 1.5em;
     align-self: center;
-    padding: 2em;
-    background-color: #000;
+    background-color: #222222;
     display: flex;
     align-items: center;
 }
 
 .nav-bar-items a {
-    margin-left: 4em;
+    margin-left: 3.5em;
     text-decoration: none;
     color: #fff;
 }
 
 .drop-down-content {
+    width: 248px;
     display: none;
+    position: absolute; 
+    background-color: #000;
+    line-height: 2.5em;
+    z-index: 1;
+    overflow: hidden;
 }
 
-a:hover .drop-btn {
+.drop-down-content a {
+    margin: auto;
+    text-align: center;
+}
+  
+.drop-down:hover .drop-down-content {
     display: block;
 }
+  
+.drop-btn a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    display: inline-block;
+    text-align: left;
+}
+  
+.dropbtn-content {
+    color: black;
+    padding: 8px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropbtn-content:hover {
+    background-color: #ddd;
+    width: auto;
+}
+  
 
 .donate-btn {
     width: 10rem;
@@ -121,6 +150,11 @@ a:hover .drop-btn {
     padding: 8px;
     color: #fff;
     cursor: pointer;
+}
+
+.donate-btn:hover {
+    background-color: #fff;
+    color: #ff0000;
 }
 
 /* Navigation bar ends here */
