@@ -171,7 +171,6 @@ body {
 }
 
 .section-content-first-container {
-    border: 2px solid rgb(0, 234, 234);
     width: 60%;
     display: flex;
     flex-direction: column;
