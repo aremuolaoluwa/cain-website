@@ -714,7 +714,7 @@ body {
 
 /* Partners and Sponsors Section starts here */
 .partners-section {
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 .partner-heading {
@@ -723,9 +723,10 @@ body {
 }
 
 .partners-images {
+    width: 95%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    flex-wrap: wrap;
   }
   
   .images-first-row, .images-second-row {
