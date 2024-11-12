@@ -635,7 +635,7 @@ body {
     height: auto;
 }
 .news-content {
-    width: 100%;
+    width: 90%;
     margin-top: 10px;
     line-height: 1.5rem;
 }
@@ -646,15 +646,15 @@ body {
 }
 
 .section-item {
+    max-width: 30%;
     display: flex;
-    flex-direction: row;
     height: fit-content;
 }
 
 .news-section-row {
     display: flex;
     justify-content: space-between;
-    height: 70vh;
+    flex-wrap: wrap;
 }
 
 .second-row {
@@ -667,7 +667,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 400px;
+    overflow: hidden;
 }
 
 .media-container {
