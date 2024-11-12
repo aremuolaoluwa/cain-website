@@ -373,13 +373,12 @@ body {
 
 .achievement-section-container {
     display: flex;
-    justify-content: space-around;
 }
 
 .achievement-section-container-image{
     width: 55%;
     background-image: url(../assets/images/ProgramsImage.png);
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
@@ -389,20 +388,22 @@ body {
     width: 40%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    height: fit-content;
+    gap: 2rem;
 }
 
 .achievement-section-container-text-heading {
     font-size: 5rem;
     text-align: right;
     font-weight: bold;
-    line-height: 6rem;
-    margin-bottom: 2rem;
+    /* margin-bottom: 1.3rem; */
 }
 
 .achievement-section-container-text-paragraph {
     font-size: 1.5rem;
-    text-align: justify;
+    text-align: right;
+    margin-top: 0;
 }
 
 .red-text {
@@ -509,7 +510,7 @@ body {
     color: red;
     width: 5rem;
     height: 9rem;
-    font-size: 15rem;
+    font-size: 13rem;
     font-weight: bold;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -581,18 +582,26 @@ body {
 /* Gift section starts here */
 
 .gift-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gift-container {
+    width: 100%;
     background-image: url(../assets/images/gift.png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 80vh;
-    position: relative;
-    margin-top: 4rem;
+    background-position: center;
+    height: 70vh;
+    /* position: relative; */
+    /* margin-top: 4rem; */
 }
 
 .gift-content {
-    width: 40%;
+    width: 80%;
     color: #fff;
-    margin: 8rem 150px;
+    margin: 7rem 150px;
     font-size: 2.5rem;
     font-weight: bold;
 }
