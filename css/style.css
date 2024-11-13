@@ -727,22 +727,89 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-  }
+}
   
-  .images-first-row, .images-second-row {
+.images-first-row, .images-second-row {
     display: flex;
     justify-content: space-evenly;
     gap: 20px;
-  }
+}
   
-  .partners-image-container {
+.partners-image-container {
     max-width: 200px;
     width: 100%;
     height: auto;
     object-fit: contain;  /* Ensure images maintain aspect ratio */
     transition: transform 0.3s ease-in-out;
-  }
+}
   
-  .partners-image-container:hover {
+.partners-image-container:hover {
     transform: scale(1.5);
-  }  
+}
+
+  /* Donate Page */
+
+.donate-image {
+    width: 100%;
+    background-image: url(../assets/images/DonateImage.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: relative;
+    height: 150vh;
+}
+
+.left-container {
+    border: 2px solid #ff0000;
+    width: 35%;
+    margin: 10rem 6rem;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.container-heading {
+    font-size: 1.2rem;
+    color: #ff0000;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 800;
+}
+
+.footer-text {
+    font-weight: bolder;
+}
+
+.donate-btns {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.first-row-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.donate-btns button {
+    width: 12rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    background-color: #fff;
+    border: 1.5px solid #000;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.row-btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row-btns button {
+    width: 8rem;
+    font-size: 14px;
+    font-weight: 400;
+}
