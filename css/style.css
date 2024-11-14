@@ -75,7 +75,7 @@ html, body {
 
 .section-container {
     width: 100%;
-    margin: 20px auto;
+    margin: 0 auto;
     padding: 1.3rem;
 }
 
@@ -646,9 +646,6 @@ html, body {
 }
 
 /* News and Insights Section Starts here */
-.news-and-insights {
-    height: auto;
-}
 .news-content {
     width: 90%;
     margin-top: 10px;
@@ -670,11 +667,17 @@ html, body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 3rem;
 }
 
-.second-row {
-    margin-top: 7rem;
+.news-first-row-item {
+    margin-bottom: 5rem;
 }
+/* 
+.second-row {
+    border: 2px solid red;
+    margin-bottom: 0;
+} */
 
 .section-first-item,
 .section-second-item,
@@ -729,9 +732,6 @@ html, body {
 /* News and Insights section ends here */
 
 /* Partners and Sponsors Section starts here */
-.partners-section {
-    margin-top: 3rem;
-}
 
 .partner-heading {
     margin-bottom: 1rem;
