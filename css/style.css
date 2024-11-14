@@ -390,7 +390,6 @@ html, body {
 /* Programs section ends here */
 
 .achievement-section-container {
-    border: 2px solid black;
     display: flex;
     align-items: center;
 }
