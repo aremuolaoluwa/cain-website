@@ -1,12 +1,18 @@
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
-}
-
-html, body {
     margin: 0;
     padding: 0;
-    font-family: 'Glacial Indifference';
-    font-weight: normal;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Glacial Indifference', sans-serif;
+    line-height: 1.6;
 }
 
 @font-face {
@@ -69,18 +75,16 @@ html, body {
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
+    /* margin-bottom: 10rem; */
 }
 
 /* All sections starts here */
 
 .section-container {
-    width: 100%;
+    border: 2px solid orange;
+    width: 98%;
     margin: 0 auto;
     padding: 1.3rem;
-}
-
-.max-width {
-    width: 100%;
 }
 
 /* All sections ends here */
@@ -107,7 +111,7 @@ html, body {
 }
 
 .nav-bar-items {
-    width: 75%;
+    width: 65%;
     padding: 1.5em;
     align-self: center;
     background-color: #222222;
@@ -116,7 +120,7 @@ html, body {
 }
 
 .nav-bar-items a {
-    margin-left: 3.5em;
+    margin-left: 4em;
     text-decoration: none;
     color: #fff;
     font-family: 'Glacial Indifference';
@@ -127,7 +131,7 @@ html, body {
     width: 248px;
     display: none;
     position: absolute; 
-    background-color: #000;
+    background-color: #222222;
     line-height: 2.5em;
     z-index: 1;
     overflow: hidden;
@@ -183,28 +187,31 @@ html, body {
 /* Navigation bar ends here */
 
 .mission-section {
+    border: 2px solid red;
     display: flex;
 }
 
 .section-content-items {
+    border: 2px solid maroon;
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: flex-end;
-    height: 60vh;
 }
 
 .section-content-first-container {
+    border: 2px solid lawngreen;
     width: 60%;
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-.section-content-item-1-first-content {
+.section-content-first-item-content {
    font-size: 3rem;
    font-family: 'Glacial Indifference';
    font-weight: 900;
-   margin-bottom: 1rem;
 }
 
 .content-heading {
@@ -312,12 +319,8 @@ html, body {
 /* Programs section starts here */
 
 .programs-section {
+    border: 2px solid green;
     box-shadow: 0px -4px 2px 0px rgb(252, 252, 252);
-}
-
-.programs-section-container {
-    width: 97%;
-    margin: 3rem auto;
 }
 
 .programs-section-container-heading {
@@ -390,6 +393,8 @@ html, body {
 /* Programs section ends here */
 
 .achievement-section-container {
+    width: 100%;
+    border: 2px solid fuchsia;
     display: flex;
     align-items: center;
 }
@@ -428,10 +433,6 @@ html, body {
 /* Achievement section ends here */
 
 /* Testimonial section starts here */
-.testimonial {
-    margin-top: 5rem;
-}
-
 .testimonial-section-container {
     display: flex;
     flex-direction: column;
@@ -541,10 +542,6 @@ html, body {
 /* Testimonial section ends here */
 
 /* Impact section starts here */
-.impact {
-    margin-top: 4rem;
-}
-
 .impact-container {
     display: flex;
     justify-content: space-around;
@@ -795,6 +792,10 @@ html, body {
     font-weight: 1000;
 }
 
+#content-text {
+    font-size: 16px;
+}
+
 .footer-text {
     font-family: 'Glacial Indifference';
     font-weight: 1000;
@@ -894,7 +895,7 @@ html, body {
     width: 300px;
     height: auto;
     border: 1px solid #000;
-    padding: 20px;
+    padding: 2.7rem;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
