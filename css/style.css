@@ -75,7 +75,6 @@ body {
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
-    /* margin-bottom: 10rem; */
 }
 
 /* All sections starts here */
@@ -412,7 +411,6 @@ body {
 
 .achievement-section-container {
     width: 100%;
-    border: 2px solid fuchsia;
     display: flex;
     align-items: center;
 }
