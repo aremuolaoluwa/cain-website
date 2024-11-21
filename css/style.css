@@ -11,8 +11,6 @@ html {
 }
 
 body {
-    padding: 0;
-    margin: 0;
     font-family: 'Glacial Indifference', sans-serif;
     line-height: 1.6;
 }
@@ -75,50 +73,56 @@ body {
     background-image: url(../assets/images/TopBackground2.JPG);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
     width: 100%;
     height: 100vh;
 }
 
-.logo-container {
-    background-image: url(../assets/images/CainWhiteLogo.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 150px;
-    height: 120px;
-   /* margin-left: 5em; */
+/* All sections starts here */
+
+.section-container {
+    width: 98%;
+    margin: 0 auto;
+    padding: 1.3rem;
 }
+
+/* All sections ends here */
 
 /* Navigation bar starts here */
 .nav-bar {
-    width: 100%;
-    max-width: 90%;
-    margin: 0px auto;
-    /* background-color: red; */
     display: flex;
+    width: 98%;
     justify-content: space-between;
-    align-items: center;
+    position: absolute;
+    top: 10;
+    left: 2%;
 }
-
-.nav-bar-items {
-    background-color: #222222;
-    padding: 35px 0px;
-    display: flex;
-    align-self: center;
-}
-
 .nav-bar a:hover {
     color: #ff0000;
 }
 
+.logo-container {
+    width: 100px;
+    margin-left: 5em;
+}
+.logo-container img {
+    width: 12rem;
+}
+
+.nav-bar-items {
+    width: 65%;
+    padding: 1.5em;
+    align-self: center;
+    background-color: #222222;
+    display: flex;
+    align-items: center;
+}
+
 .nav-bar-items a {
-    margin-left: 3em;
+    margin-left: 4em;
     text-decoration: none;
     color: #fff;
     font-family: 'Glacial Indifference';
     font-weight: normal;
-    font-size: 17px;
 }
 
 .drop-down-content {
@@ -132,6 +136,7 @@ body {
 }
 
 .drop-down-content a {
+    margin: auto;
     text-align: center;
 }
   
@@ -142,12 +147,12 @@ body {
 .drop-btn a {
     text-decoration: none;
     color: #fff;
-    /* padding: 10px; */
-    /* display: inline-block;
-    text-align: left; */
+    padding: 10px;
+    display: inline-block;
+    text-align: left;
 }
   
-dropbtn-content {
+.dropbtn-content {
     color: black;
     padding: 8px;
     text-decoration: none;
@@ -158,14 +163,14 @@ dropbtn-content {
     background-color: #ddd;
     width: auto;
 }
+  
 
 .donate-btn {
-    /* width: 60%; */
+    width: 10rem;
     background-color: red;
-    padding: 10px 40px;
     border: none;
     border-radius: 50px;
-    font-size: 17px;
+    padding: 8px;
     color: #fff;
     font-family: 'Glacial Indifference';
     font-weight: normal;
@@ -179,55 +184,50 @@ dropbtn-content {
 
 /* Navigation bar ends here */
 
-/* All section-container starts here */
-
-.section-container {
-    /* background-color: #dd0c0c; */
-    width: 100%;
-    padding: 1.3rem 0px;
+.mission-section {
+    display: flex;
 }
 
 .section-content-items {
-    /* background-color: aqua; */
     width: 100%;
-    max-width: 90%;
-    margin: 0 auto;
-    /* width: 100%; */
-    /* display: flex;
+    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: flex-end; */
+    align-items: flex-end;
 }
 
 .section-content-first-container {
-    /* background-color: pink; */
-    /* padding: 20px 0; */
-    /* width: 60%;
+    width: 60%;
     display: flex;
     flex-direction: column;
-    gap: 2rem; */
+    gap: 2rem;
 }
 
-
 .section-content-first-item-content {
-    font-size: 47px;
-    font-family: 'Glacial Indifference';
-    font-weight: 900;
-    line-height: 63px;
- }
+   font-size: 3rem;
+   font-family: 'Glacial Indifference';
+   font-weight: 900;
+}
 
- .content-heading {
-    font-size: 4rem;
+.content-heading {
+    font-size: 5rem;
     font-weight: bold;
     color: red;
 }
 
 .content-paratext {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: bold;
 }
 
- .section-content-item-1-second-content a {
+.section-content-first-container-img {
+    height: 150px;
+    background-image: url(../assets/images/dummyImages.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.section-content-item-1-second-content a {
     color: #ff0000;
     text-decoration: none;
 }
@@ -236,23 +236,33 @@ dropbtn-content {
     text-decoration: underline;
 }
 
-.section-content-first-container-img {
-    height: 134px;
-    background-image: url(../assets/images/dummyImages.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-/*.section-content-second-container {
+.section-content-second-container {
+    /* width: fit-content; */
     height: fit-content;
     display: flex;
-    flex-direction: column; */
+    flex-direction: column;
     /* justify-content: flex-end; */
-    /* margin-top: 4rem; 
-}*/
+    /* margin-top: 4rem; */
+}
+
+.second-content-container {
+    width: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    justify-items: flex-start;
+    align-items: center;
+}
+
+.second-content-container img {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: flex-start;
+    justify-self: flex-start;
+}
 
 .second-container-upper-container {
-    width: 49%;
+    width: 550px;
     min-height: 200px;
     /* margin-top: 5rem; */
     background-image: url(../assets/images/globes.png);
@@ -265,46 +275,9 @@ dropbtn-content {
     color: #fff;
 }
 
-.img-text {
-    margin-left: 3.1rem;
-} 
-
-.upper-text {
-    font-size: 3rem;
-    font-weight: bold;
-}
-
-.lower-text {
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.second-lower-text {
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-
-.second-content-container {
-    width: fit-content;
-    display: flex;
-    align-items: center;
-    /* justify-content: flex-start;
-    justify-items: flex-start;
-    align-items: center; */
-}
-
-.second-content-container img {
-    width: 120px;
-    height: 120px;
-    /* display: flex;
-    align-items: flex-start;
-    justify-self: flex-start; */
-}
-
 .text-container {
+    width: 360px;
     background-color: #ff0000;
-    width: 50%;
     padding: 25px;
     border-radius: 3rem;
     color: #fff;
@@ -317,99 +290,24 @@ dropbtn-content {
     color: #fff;
 }
 
-/* media query for  */
-
-@media (max-width: 768px) {
-    .section-container {
-        padding: 1.2rem 0px;
-    }
-       
-    .section-content-first-item-content {
-        font-size: 37px;
-        line-height: 53px;
-     }
-    
-     .content-heading {
-        font-size: 3.5rem;
-    }
-    
-    .content-paratext {
-        font-size: 1.2rem;
-        line-height: 35px;
-    }
-    
-    .section-content-first-container-img {
-        height: 130px;
-    }
-
-    .second-container-upper-container {
-        width: 550px;
-    }
-    
-    /* .img-text {
-        margin-left: 4.1rem;
-    } */
-    
-    .upper-text {
-        font-size: 2rem;
-    }
-    
-    .lower-text {
-        font-size: 13px;
-    }
-    
-    .second-lower-text {
-        font-size: 0.8rem;
-    }
-    
-    .second-content-container img {
-        width: 100px;
-        height: 100px;
-        /* display: flex;
-        align-items: flex-start;
-        justify-self: flex-start; */
-    }
-    
-    .text-container {
-        width: 50%;
-        padding: 20px;
-        line-height: 20px;
-        font-size: 15px;
-    }
-
+.upper-text {
+    font-size: 3rem;
+    font-weight: bold;
 }
 
-/* All sections ends here */
+.lower-text {
+    font-size: 15px;
+    font-weight: bold;
+}
 
-/* .mission-section {
-    display: flex;
-} */
+.img-text {
+    margin-left: 4.1rem;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.second-lower-text {
+    font-size: 1rem;
+    font-weight: bold;
+}
 
 /* Mission section ends here */
 
