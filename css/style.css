@@ -903,10 +903,11 @@ body {
 .item-heading {
     font-family: 'GlacialIndifference', sans-serif;
     font-weight: bold;
+    font-size: 1.3rem;
 }
 
 .item-content {
-    width: 300px;
+    max-width: 350px;
     height: auto;
     border: 1px solid #000;
     padding: 2.7rem;
@@ -916,6 +917,11 @@ body {
     font-size: 14px;
     font-family: 'GlacialIndifference';
     font-weight: normal;
+}
+
+.second-row-first-item .item-content p,
+.second-row-second-item .item-content p{
+    margin-bottom: 0;
 }
 
 .benevity {
@@ -992,11 +998,5 @@ body {
 
 #email-text, #email-text a {
     color: red;
+    font-family: sans-serif;
 }
-
-/* Avoid removing list style in the donate section */
-/* ul, .donate-page ol {
-    list-style-type: disc;
-    margin-left: 1.2rem;
-    padding-left: 1.5rem;
-} */
