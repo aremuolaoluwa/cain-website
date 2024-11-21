@@ -469,7 +469,7 @@ body {
     width: 100%;
     display: flex;
     padding: 20px;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 }
 
 .testimonial-image-container {
@@ -497,8 +497,6 @@ body {
 
 .testimonial-2 {
     background-color: rgb(228, 228, 228);
-    /* margin-top: 5rem; */
-    /* margin-bottom: 5rem; */
 }
 
 .testimonial-3 {
