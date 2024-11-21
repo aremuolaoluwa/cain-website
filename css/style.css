@@ -2,15 +2,11 @@
 *::before,
 *::after {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    font-size: 16px;
 }
 
 body {
+    margin: 0;
+    padding: 0;
     font-family: 'Glacial Indifference', sans-serif;
     line-height: 1.6;
 }
@@ -819,6 +815,7 @@ body {
 }
 
 .content {
+    border: 2px solid red;
     font-family: 'Glacial Indifference';
     font-weight: normal;
 }
@@ -996,3 +993,10 @@ body {
 #email-text, #email-text a {
     color: red;
 }
+
+/* Avoid removing list style in the donate section */
+/* ul, .donate-page ol {
+    list-style-type: disc;
+    margin-left: 1.2rem;
+    padding-left: 1.5rem;
+} */
