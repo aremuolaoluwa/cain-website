@@ -1028,14 +1028,10 @@ body {
 
 /* Media Query */
 
-/* Main Reset and Styles Above Here */
-
-/* Responsive Design Begins */
-
 /* Tablet view: Maximum width of 768px */
 @media (max-width: 768px) {
     body {
-        font-size: 90%; /* Adjust font size for smaller screens */
+        font-size: 90%;
     }
 
     .nav-bar {
