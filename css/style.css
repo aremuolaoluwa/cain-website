@@ -247,19 +247,6 @@ body {
 }
 
 .second-container-first-img {
-    /* width: 49%; */
-    /* height: 150px; */
-    /* margin: 15px 0px; */
-    /* margin-top: 5rem; */
-    /* background-image: url(../assets/images/globes.png); */
-    /* background-size: cover; */
-    /* background-repeat: no-repeat; */
-    /* background-position: left; */
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* color: #fff; */
-
     width: 95%;
     height: 150px;
     background-image: url(../assets/images/globes.png);
@@ -316,6 +303,7 @@ body {
 }
 
 /* media query for  */
+
 
 @media (min-width: 769px) and (max-width: 1025px) {
     .section-container {
@@ -1144,6 +1132,14 @@ body {
     position: relative;
 }
 
+#impact-heading {
+    font-size: 2.7rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    font-family: 'HelveticaNowText', sans-serif;
+    line-height: 55px;
+}
+
 .impact-text-content {
     width: calc(80% - 10px);
 }
@@ -1802,4 +1798,161 @@ body {
 #email-text, #email-text a {
     color: red;
     font-family: sans-serif;
+}
+
+/* MEDIA QUERIES FOR MOBILE 320/360 */
+
+/* First Section */
+
+@media (min-width: 320px) and (max-width: 360px) {
+
+    body {
+        max-width: 100%;
+    }
+
+    header {
+        max-width: 100%;
+    }
+    
+    .section-content-items {
+        width: 100%;
+        max-width: 100%;
+        display: inline-block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .section-content-first-container {
+        width: 100%;
+    }
+
+    .content-paratext {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    br {
+        display: none;
+    }
+
+    .section-content-first-container-img {
+        min-width: 100%;
+        background-size: cover;
+    }
+
+    .section-content-second-container {
+        width: 100%;
+    }
+
+    .second-container-upper-container {
+        margin-top: 2rem;
+        max-width: 100%;
+    }
+
+    /* Core Interventions */
+
+    .programs-section-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .section-heading {
+        font-size: 1.7rem;
+        font-weight: 800;
+    }
+    
+    .programs-section-container-first-row-items > .programs-section-container-first-row-items-1:not(:last-child)::after {
+        background-color: transparent;
+    }
+
+    /* Achievement */
+
+    .achievement-section-container-text-heading {
+        text-align: center;
+        font-weight: 800;
+        font-size: 1.7rem;
+    }
+
+    /* Testimonial */
+
+    #quote {
+        margin: 0 auto;
+    }
+
+    /* Impact */
+
+    .impact-container {
+        width: 100%;
+    }
+
+    #impact-heading {
+        font-size: 1.5rem;
+        line-height: 35px;
+        font-weight: bolder;
+    }
+
+    .impact-number-heading {
+        font-size: 2.5rem;
+        font-weight: 900;
+        position: relative;
+        margin-bottom: 10px;
+    }
+    
+    #accent {
+        position: absolute;
+        left: 9rem;
+        top: -20px;
+        z-index: -1;
+    }
+
+    #accent img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .impact-personnel {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .impact-para-text {
+        font-weight: 500;
+    }
+
+    /* Gift Section */
+
+    .gift-container {
+        max-width: 100%;
+        background-size: cover;
+        background-position: right;
+        object-fit: contain;
+        background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/gift.png);
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/gift.png);
+    }
+    
+    .gift-content {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .gift-para-text {
+        width: 100%;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .give-today-container {
+        margin: 10px auto;
+        width: 90px;
+        height: 30px; 
+        font-size: 12px;
+    }
+
+    .give-today-container img {
+        display: none;
+    }
 }
