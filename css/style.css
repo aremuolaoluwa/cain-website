@@ -1801,12 +1801,22 @@ body {
 
 @media (min-width: 320px) and (max-width: 360px) {
 
-    body {
+    header {
         max-width: 100%;
     }
 
-    header {
+    .nav-bar {
         max-width: 100%;
+        display: inline-block;
+        overflow: hidden;
+    }
+
+    .nav-bar-items {
+        width: 100%;
+    }
+
+    .nav-bar-items a {
+        font-size: 10px;
     }
     
     .section-content-items {
