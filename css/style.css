@@ -1486,13 +1486,8 @@ body {
 }
 
 .news-first-row-item {
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
-/* 
-.second-row {
-    border: 2px solid red;
-    margin-bottom: 0;
-} */
 
 .section-first-item,
 .section-second-item,
@@ -1887,10 +1882,10 @@ body {
         width: 100%;
     }
 
-    #impact-heading {
+    .section-heading {
         font-size: 1.5rem;
         line-height: 35px;
-        font-weight: bolder;
+        font-weight: 800;
     }
 
     .impact-number-heading {
@@ -1954,5 +1949,67 @@ body {
 
     .give-today-container img {
         display: none;
+    }
+
+    /* News and Insights */
+
+    .news-section-row {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .section-item {
+        max-width: 100%;
+    }
+
+    .news-content {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .news-text {
+        margin-top: 10px;
+    }
+
+    .section-third-item {
+        margin-bottom: 0;
+    }
+
+    /* Partners & Sponsors */
+
+    .partners-section {
+        min-width: 100%;
+        margin-top: 0;
+    }
+
+    .partner-heading {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .partners-images {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .images-first-row, .images-second-row {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+
+    .partners-image-container {
+        max-width: 50%;
+        height: auto;
+        margin: 0 auto;
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;
     }
 }
