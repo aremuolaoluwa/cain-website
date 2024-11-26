@@ -1370,9 +1370,19 @@ body {
     justify-content: space-between;
     text-transform: uppercase;
     margin-top: 20px;
+    text-align: center;
     font-size: 1.7rem;
     font-weight: bold;
     padding: 7px;
+}
+
+.donate-link {
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .gift-arrow {
@@ -1564,7 +1574,7 @@ body {
 }
   
 .partners-image-container:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
   /* Donate Page */
@@ -1790,12 +1800,17 @@ body {
     font-weight: bold;
 }
 
+.donate-footer-btn a {
+    color: #fff;
+    text-decoration: none;
+}
+
 #email-text, #email-text a {
     color: red;
     font-family: sans-serif;
 }
 
-/* MEDIA QUERIES FOR MOBILE 320/360 */
+/* MEDIA QUERIES FOR MOBILE | HOMEPAGE (320/360) */
 
 /* First Section */
 
@@ -2024,3 +2039,5 @@ body {
         transition: transform 0.3s ease-in-out;
     }
 }
+
+/* MEDIA QUERIES FOR MOBILE | DONATE PAGE (320/360) */
