@@ -1814,7 +1814,7 @@ body {
 
 /* First Section */
 
-@media (min-width: 320px) and (max-width: 360px) {
+@media (min-width: 320px) and (max-width: 414px) {
 
     header {
         max-width: 100%;
@@ -2041,4 +2041,39 @@ body {
     }
 }
 
-/* MEDIA QUERIES FOR MOBILE | DONATE PAGE (320/360) */
+/* MEDIA QUERIES FOR SCREEN SIZES 375 and 430 */
+
+@media (min-width: 390px) and (max-width: 430px){}
+
+/* MEDIA QUERIES FOR MOBILE || DONATE PAGE (320/360) */
+
+@media (min-width: 320px) and (max-width: 414px){
+
+    .donate-image {
+        height: 100vh;
+    }
+
+    .left-container {
+        background-color: white;
+        width: 100%;
+        border-radius: 1rem;
+        margin: 0 auto;
+        margin-top: 100vh;
+        font-size: 12px;
+        padding: 20px;
+    }
+
+    #giving {
+        width: 100%;
+        margin-top: 75vh;
+    }
+
+    .section-items {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .row-items {
+        flex-direction: column;
+    }
+}
