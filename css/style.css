@@ -1,18 +1,15 @@
-*,
+/* *,
 *::before,
 *::after {
     box-sizing: border-box;
-}
-
-html {
-    font-size: 16px;
-}
+} */
 
 body {
     padding: 0;
     margin: 0;
     font-family: 'Glacial Indifference', sans-serif;
     line-height: 1.6;
+    box-sizing: border-box;
 }
 
 @font-face {
@@ -1810,11 +1807,15 @@ body {
     font-family: sans-serif;
 }
 
-/* MEDIA QUERIES */
+/* MEDIA QUERIES FOR MOBILE | HOMEPAGE (320/360) */
 
-/* HOMEPAGE */
+/* First Section */
 
 @media (min-width: 320px) and (max-width: 360px) {
+
+    .nav-bar-items {
+        display: none;
+    }
 
     .section-container {
         max-width: 90%;
@@ -1862,6 +1863,10 @@ body {
     }
 
     /* Core Interventions */
+
+    .programs-section {
+        max-width: 100%;
+    }
 
     .programs-section-container {
         max-width: 100%;
@@ -2147,6 +2152,10 @@ body {
 
     /* MISSION SECTION ENDS HERE */
     /* PROGRAMS SECTION STARTS HERE */
+
+    .programs-section {
+        max-width: 100%;
+    }
 
     .programs-section-container-first-row-items {
         max-width: 100%;
