@@ -1810,35 +1810,24 @@ body {
     font-family: sans-serif;
 }
 
-/* MEDIA QUERIES FOR MOBILE | HOMEPAGE (320/360) */
+/* MEDIA QUERIES */
 
-/* First Section */
+/* HOMEPAGE */
 
-@media (min-width: 320px) and (max-width: 414px) {
+@media (min-width: 320px) and (max-width: 360px) {
 
-    header {
-        max-width: 100%;
+    .section-container {
+        max-width: 90%;
     }
 
-    .nav-bar {
-        max-width: 100%;
-        display: inline-block;
-        overflow: hidden;
-    }
-
-    .nav-bar-items {
-        width: 100%;
-    }
-
-    .nav-bar-items a {
-        font-size: 10px;
-    }
-    
-    .section-content-items {
-        width: 100%;
-        max-width: 100%;
-        display: inline-block;
+    .mission-section {
+        max-width: 95%;
         margin: 0 auto;
+    }
+
+    .section-content-items {
+        min-width: 100%;
+        display: inline-block;
         text-align: center;
     }
 
@@ -1853,7 +1842,7 @@ body {
         font-weight: 500;
     }
 
-    br {
+    .content-paratext br {
         display: none;
     }
 
@@ -1875,7 +1864,7 @@ body {
     /* Core Interventions */
 
     .programs-section-container {
-        width: 100%;
+        max-width: 100%;
         text-align: center;
     }
 
@@ -1888,21 +1877,65 @@ body {
         background-color: transparent;
     }
 
+    .programs-section-container-first-row-items {
+        flex-direction: column;
+        justify-self: center;
+        overflow: hidden;
+        gap: 20px;
+    }
+
+    .programs-section-container-first-row-items-1 {
+        margin: 0 auto;
+    }
+
+    .programs-section-container-paragraph-text {
+        width: 95%;
+    }
+
     /* Achievement */
 
+    .achievement-secion {
+        margin: 0 auto;
+    }
+
     .achievement-section-container-text-heading {
+        width: 100%;
         text-align: center;
         font-weight: 800;
         font-size: 1.7rem;
     }
 
+    .achievement-section-container-text-heading br {
+        display: none;
+    }
+
     /* Testimonial */
+
+    .testimonial {
+        max-width: 98%;
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+
+    .testimonial-content {
+        width: 90%;
+    }
+
+    .quote-text {
+        max-width: 100%;
+        margin: 0 auto;
+    }
 
     #quote {
         margin: 0 auto;
     }
 
     /* Impact */
+
+    .impact {
+        max-width: 95%;
+        margin: 0 auto;
+    }
 
     .impact-container {
         width: 100%;
@@ -1939,7 +1972,9 @@ body {
     }
 
     .impact-para-text {
+        width: 98%;
         font-weight: 500;
+        margin: 0 auto;
     }
 
     /* Gift Section */
@@ -1950,7 +1985,7 @@ body {
         background-position: right;
         object-fit: contain;
         background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/gift.png);
-	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/gift.png);
+	    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/gift.png);
     }
     
     .gift-content {
@@ -1991,6 +2026,12 @@ body {
         max-width: 100%;
     }
 
+    .media-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+
     .news-content {
         margin-left: auto;
         margin-right: auto;
@@ -2002,6 +2043,11 @@ body {
 
     .section-third-item {
         margin-bottom: 0;
+    }
+
+    iframe {
+        width: 98%;
+        margin: 0 auto;
     }
 
     /* Partners & Sponsors */
@@ -2041,39 +2087,333 @@ body {
     }
 }
 
-/* MEDIA QUERIES FOR SCREEN SIZES 375 and 430 */
+/* 414 and 431 */
 
-@media (min-width: 390px) and (max-width: 430px){}
+@media (min-width: 414px) and (max-width: 431px) {
 
-/* MEDIA QUERIES FOR MOBILE || DONATE PAGE (320/360) */
+    /* All Headings */
+    
+    .section-heading {
+        text-align: center;
+        font-size: 1.8rem;
+    }
 
-@media (min-width: 320px) and (max-width: 414px){
+    .testimonial-heading {
+        text-align: center;
+    }
+    
+    #quote {
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+    }
+
+    /* All Headings Ends Here */
+
+    .mission-section, .section-content-items {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-content-first-item-content br, .content-paratext br {
+        display: none;
+    }
+
+    .section-content-first-item-content {
+        margin-bottom: 1.3rem;
+    }
+
+    .content-paratext {
+        width: 80%;
+        margin: 0 auto;
+        font-weight: 500;
+    }
+
+    .section-content-first-container-img {
+        width: 98%;
+        margin: 0 auto;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 2rem;
+    }
+
+    .section-content-second-container {
+        width: 100%;
+        text-align: left;
+    }
+
+
+    /* MISSION SECTION ENDS HERE */
+    /* PROGRAMS SECTION STARTS HERE */
+
+    .programs-section-container-first-row-items {
+        max-width: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .programs-section-container-first-row-items-1 {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    
+    .programs-section-container-first-row-items > .programs-section-container-first-row-items-1:not(:last-child)::after {
+        display: none;
+    }
+
+    /* ACHIEVEMENT SECTION HERE */
+
+    .achievement-section-container-text-heading {
+        text-align: center;
+        /* font-size: 1px; */
+    }
+
+    .achievement-section-container-text-heading br {
+        display: none;
+    }
+
+    /* GIFT SECTION */
+
+    .gift-container {
+        max-width: 100%;
+        background-size: cover;
+        background-position: right;
+        object-fit: contain;
+        background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/gift.png);
+	    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/gift.png);
+    }
+
+    .gift-para-text {
+        text-align: center;
+    }
+
+    
+    .give-today-container {
+        background-color: #ff0000;
+        width: 40%;
+        margin-top: 20px;
+        text-align: center;
+        font-size: 1rem;
+        padding: 2px;
+    }
+
+    /* NEWS AND INSIGHTS */
+
+    .news-and-insights {
+        max-width: 100%;
+    }
+
+    .news-section-row {
+        max-width: 100%;
+        flex-direction: column;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .section-item {
+        max-width: 100%;
+    }
+
+    .media-container {
+        width: 98%;
+        margin: 0 auto;
+    }
+
+    .news-heading {
+        width: 98%;
+        margin: 10px auto;
+    }
+
+    /* PARTNERS SECTION */
+
+    .partners-section {
+        max-width: 100%;
+    }
+
+    .partner-heading {
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .partners-images {
+        width: 100%;
+    }
+
+    .images-first-row, .images-second-row {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem auto;
+    }
+}
+
+/* DONATE PAGE */
+
+@media (min-width: 320px) and (max-width: 360px){
 
     .donate-image {
         height: 100vh;
+        border: none;
+    }
+
+    aside {
+        margin: 0 auto;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    .donate-quote {
+        display: block;
+        width: 80%;
+        background-color: rgb(18,19,18);
+        opacity: .6;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Glacial Indifference';
+        font-weight: 900;
+        font-size: .9rem;
+        line-height: 25px;
+        color: #fff;
+        padding: .8rem;
+        margin: 23rem auto;
+        border-radius: 10px;
     }
 
     .left-container {
         background-color: white;
-        width: 100%;
+        width: 85%;
         border-radius: 1rem;
-        margin: 0 auto;
-        margin-top: 100vh;
+        margin-top: 82vh;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
         font-size: 12px;
         padding: 20px;
     }
 
+    .container-heading {
+        display: none;
+    }
+
+    .giving-title {
+        margin: 0;
+    }
+
+    .item-content {
+        margin: 0 auto;
+    }
+
     #giving {
         width: 100%;
-        margin-top: 75vh;
+    }
+
+    .giving-title {
+        text-align: center;
     }
 
     .section-items {
         width: 100%;
         flex-direction: column;
+        text-align: center;
     }
 
     .row-items {
         flex-direction: column;
+    }
+
+    .item-image {
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 414px) and (max-width: 431px){
+
+    .donate-image {
+        border: none;
+    }
+
+    aside {
+        margin: 0 auto;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    .nav-bar-items {
+        display: none;
+    }
+
+    .donate-image {
+        height: 100vh;
+    }
+
+    .donate-quote {
+        display: block;
+        width: 80%;
+        background-color: rgb(18,19,18);
+        opacity: .6;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Glacial Indifference';
+        font-weight: 900;
+        font-size: .9rem;
+        line-height: 25px;
+        color: #fff;
+        padding: .8rem;
+        margin: 23rem auto;
+        border-radius: 10px;
+    }
+
+    .left-container {
+        background-color: white;
+        width: 85%;
+        border-radius: 1rem;
+        margin-top: 80vh;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+        font-size: 12px;
+        padding: 20px;
+    }
+
+    .container-heading {
+        display: none;
+    }
+
+    .item-content {
+        margin: 0 auto;
+    }
+
+    #giving {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .giving-title {
+        text-align: center;
+        margin: 0;
+    }
+
+    .section-items {
+        width: 90%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .row-items {
+        max-width: 90%;
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item-image {
+        margin: 0 auto;
     }
 }
